@@ -38,7 +38,11 @@ class CreateSongsTable extends Migration
                 ->references('id_style')
                 ->on('styles');
             
-            $table->string('song_tone', 3)->default('');
+            $table->unsignedBigInteger('song_id_tone', false)->nullable();
+            // Chave genero
+            $table->foreign('song_id_tone', 'FK_id_tone_songs')
+                ->references('id_tone')
+                ->on('tones');
 
             $table->unsignedBigInteger('song_id_videoclass', false)->nullable();
             // Chave Estrangeira VideoAula
