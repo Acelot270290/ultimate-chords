@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateContinentsTable extends Migration
+class CreateStylesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateContinentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('continents', function (Blueprint $table) {
-            $table->bigIncrements('id_continent');
-            $table->string('code',2);
-            $table->string('name',100);
+        Schema::create('styles', function (Blueprint $table) {
+            $table->bigIncrements('id_style');
+            $table->string('style_pt',250)->default('');
+            $table->string('style_en',250)->default('');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateContinentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('continents');
+        Schema::dropIfExists('generos');
     }
 }

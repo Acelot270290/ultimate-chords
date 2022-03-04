@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Artista;
+use App\Videoclass;
 use Illuminate\Http\Request;
 
-class ArtistaController extends Controller
+class VideoclassController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ArtistaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Artista  $artista
+     * @param  \App\VideoAula  $videoAula
      * @return \Illuminate\Http\Response
      */
-    public function show(Artista $artista)
+    public function show(VideoAula $videoAula)
     {
         //
     }
@@ -52,10 +52,10 @@ class ArtistaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Artista  $artista
+     * @param  \App\VideoAula  $videoAula
      * @return \Illuminate\Http\Response
      */
-    public function edit(Artista $artista)
+    public function edit(VideoAula $videoAula)
     {
         //
     }
@@ -64,10 +64,10 @@ class ArtistaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Artista  $artista
+     * @param  \App\VideoAula  $videoAula
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Artista $artista)
+    public function update(Request $request, VideoAula $videoAula)
     {
         //
     }
@@ -75,10 +75,10 @@ class ArtistaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Artista  $artista
+     * @param  \App\VideoAula  $videoAula
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Artista $artista)
+    public function destroy(VideoAula $videoAula)
     {
         //
     }

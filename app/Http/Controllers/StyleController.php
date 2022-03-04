@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Musica;
+use App\Style;
 use Illuminate\Http\Request;
 
-class MusicaController extends Controller
+class StyleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class MusicaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Musica  $musica
+     * @param  \App\Genero  $genero
      * @return \Illuminate\Http\Response
      */
-    public function show(Musica $musica)
+    public function show(Genero $genero)
     {
         //
     }
@@ -52,10 +52,10 @@ class MusicaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Musica  $musica
+     * @param  \App\Genero  $genero
      * @return \Illuminate\Http\Response
      */
-    public function edit(Musica $musica)
+    public function edit(Genero $genero)
     {
         //
     }
@@ -64,10 +64,10 @@ class MusicaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Musica  $musica
+     * @param  \App\Genero  $genero
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Musica $musica)
+    public function update(Request $request, Genero $genero)
     {
         //
     }
@@ -75,10 +75,10 @@ class MusicaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Musica  $musica
+     * @param  \App\Genero  $genero
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Musica $musica)
+    public function destroy(Genero $genero)
     {
         //
     }

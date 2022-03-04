@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVideoAulasTable extends Migration
+class CreateVideoclassesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateVideoAulasTable extends Migration
      */
     public function up()
     {
-        Schema::create('video_aulas', function (Blueprint $table) {
-            $table->bigIncrements('id_videoaula');
-            $table->string('titulo_video',250);
-            $table->string('url_video',250);
-            $table->integer('membros')->default(0);
+        Schema::create('videoclasses', function (Blueprint $table) {
+            $table->bigIncrements('id_videoclass');
+            $table->string('videoclass_title', 250)->default('');
+            $table->string('videoclass_url', 250)->default('');
+            $table->string('videoclass_members', 10000)->default('0000');
             
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ class CreateVideoAulasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('video_aulas');
+        Schema::dropIfExists('videoclasses');
     }
 }
