@@ -29,7 +29,7 @@ class CreateSongsTable extends Migration
                 ->on('users');
 
             $table->string('song_name', 250)->default('');
-            $table->year('song_year', 4)->default('0000');
+            $table->string('song_year', 4)->default('0000');$table->string('song_year', 4)->default('0000');
             $table->string('song_author', 250)->default('');
 
             $table->unsignedBigInteger('song_id_style', false)->nullable();
