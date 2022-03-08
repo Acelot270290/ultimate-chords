@@ -12,10 +12,10 @@
     <title>One Music - Modern Music HTML5 Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{url('img/core-img/favicon.ico')}}">
+    <link rel="icon" href="{{ url('assets/img/core-img/favicon.ico') }}">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="{{url('style.css')}}">
+    <link rel="stylesheet" href="{{ url('assets/style.css') }}">
 
 </head>
 
@@ -40,7 +40,7 @@
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="assets/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -121,7 +121,7 @@
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center">
             <div class="col-12 col-md-6">
-                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="#"><img src="assets/img/core-img/logo.png" alt=""></a>
                 <p class="copywrite-text"><a href="#">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>
@@ -150,15 +150,15 @@
 
 <!-- ##### All Javascript Script ##### -->
 <!-- jQuery-2.2.4 js -->
-<script src="{{ url('js/jquery/jquery-2.2.4.min.js') }}"></script>
+<script src="{{ url('assets/js/jquery/jquery-2.2.4.min.js') }}"></script>
 <!-- Popper js -->
-<script src="{{ url('js/bootstrap/popper.min.js') }}"></script>
+<script src="{{ url('assets/js/bootstrap/popper.min.js') }}"></script>
 <!-- Bootstrap js -->
-<script src="{{url('js/bootstrap/bootstrap.min.js')}}"></script>
+<script src="{{ url('assets/js/bootstrap/bootstrap.min.js') }}"></script>
 <!-- All Plugins js -->
-<script src="{{url('js/plugins/plugins.js')}}"></script>
+<script src="{{ url('assets/js/plugins/plugins.js') }}"></script>
 <!-- Active js -->
-<script src="{{url('js/active.js')}}"></script>
+<script src="{{ url('assets/js/active.js') }}"></script>
 </body>
 
 </html>
