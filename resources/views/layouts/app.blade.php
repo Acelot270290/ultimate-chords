@@ -57,19 +57,8 @@
                         <div class="main-search mainNavCol">
                             <form class="main-search search-form full-width">
                                 <div class="row">
-                                    <!-- location picker -->
-                                    <div class="col-lg-6 col-md-5">
-                                        <a href="#" class="delivery-add p-relative"> <span class="icon"><i
-                                                    class="fas fa-map-marker-alt"></i></span>
-                                            <span class="address">Brooklyn, NY</span>
-                                        </a>
-                                        <div class="location-picker">
-                                            <input type="text" class="form-control" placeholder="Enter a new address">
-                                        </div>
-                                    </div>
-                                    <!-- location picker -->
                                     <!-- search -->
-                                    <div class="col-lg-6 col-md-7">
+                                    <div class="col-lg-8 col-md-7">
                                         <div class="search-box padding-10">
                                             <input type="text" class="form-control"
                                                 placeholder="Pizza, Burger, Chinese">

@@ -1062,8 +1062,8 @@ span.type-tag{
     align-items: center;
 }
 .header .search-form .search-box input {
-    padding: .375rem 10px .375rem 40px;
-    border-radius: 0;
+    padding: .500rem 30px .500rem 30px;
+    border-radius: 100px;
 }
 .header .right-side .cart-btn .user-alert-cart,
 .header .right-side .cart-btn .user-alert-notification {
