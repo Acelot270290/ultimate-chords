@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="#">
     <meta name="description" content="#">
-    <title>Munchbox | Food Delivery Hub</title>
+    <title>Ultimate Guitar | Guitar Lessons</title>
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
