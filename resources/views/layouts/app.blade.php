@@ -61,7 +61,7 @@
                                     <div class="col-lg-8 col-md-7">
                                         <div class="search-box padding-10">
                                             <input type="text" class="form-control"
-                                                placeholder="Pizza, Burger, Chinese">
+                                                placeholder="Chords, Tabs , Lessons">
                                         </div>
                                     </div>
                                     <!-- search -->
@@ -69,340 +69,88 @@
                             </form>
                         </div>
                         <div class="right-side fw-700 mainNavCol">
-                            <div class="gem-points">
-                                <a href="#"> <i class="fas fa-concierge-bell"></i>
-                                    <span>Order Now</span>
-                                </a>
-                            </div>
-                            <div class="catring parent-megamenu">
-                                <a href="#"> <span>Pages <i class="fas fa-caret-down"></i></span>
-                                    <i class="fas fa-bars"></i>
-                                </a>
-                                <div class="megamenu">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="row">
-                                                <div class="col-lg-4 col-md-5">
-                                                    <div class="ex-collection-box h-100">
-                                                        <a href="#">
-                                                            <img src="assets/img/nav-1.jpg"
-                                                                class="img-fluid full-width h-100" alt="image">
+                            <a href="#"> <span>Chords &nbsp;&nbsp;</span>
+                                <a href="#"> <span>Tabs&nbsp;&nbsp; </span>
+                                    <a href="#"> <span>Lessons </span>
+                                      
+                                        <!-- mobile search -->
+                                        <div class="mobile-search">
+                                            <a href="#" data-toggle="modal" data-target="#search-box"> <i
+                                                    class="fas fa-search"></i>
+                                            </a>
+                                        </div>
+                                        <!-- mobile search -->
+                                        <!-- user account -->
+                                        <div class="user-details p-relative">
+                                            <a href="#" class="text-light-white fw-500">
+                                                <img src="assets/img/user-1.png" class="rounded-circle" alt="userimg">
+                                                <span>Hi,
+                                                    Kate</span>
+                                            </a>
+                                            <div class="user-dropdown">
+                                                <ul>
+                                                    <li>
+                                                        <a href="order-details.html">
+                                                            <div class="icon"><i class="flaticon-rewind"></i>
+                                                            </div> <span class="details">Past Orders</span>
                                                         </a>
-                                                        <div class="category-type overlay padding-15"> <a
-                                                                href="restaurant.html" class="category-btn">Top
-                                                                rated</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-8 col-md-7">
-                                                    <div class="row">
-                                                        <div class="col-lg-3 col-sm-6">
-                                                            <div class="menu-style">
-                                                                <div class="menu-title">
-                                                                    <h6 class="cat-name"><a href="#"
-                                                                            class="text-light-black">Home Pages</a></h6>
-                                                                </div>
-                                                                <ul>
-                                                                    <li class="active"><a href="index-2.html"
-                                                                            class="text-light-white fw-500">Landing
-                                                                            Page</a>
-                                                                    </li>
-                                                                    <li><a href="homepage-1.html"
-                                                                            class="text-light-white fw-500">Home Page
-                                                                            1</a>
-                                                                    </li>
-                                                                    <li><a href="homepage-2.html"
-                                                                            class="text-light-white fw-500">Home Page
-                                                                            2</a>
-                                                                    </li>
-                                                                    <li><a href="homepage-3.html"
-                                                                            class="text-light-white fw-500">Home Page
-                                                                            3</a>
-                                                                    </li>
-                                                                    <li><a href="homepage-4.html"
-                                                                            class="text-light-white fw-500">Home Page
-                                                                            4</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-sm-6">
-                                                            <div class="menu-style">
-                                                                <div class="menu-title">
-                                                                    <h6 class="cat-name"><a href="#"
-                                                                            class="text-light-black">Inner Pages</a>
-                                                                    </h6>
-                                                                </div>
-                                                                <ul>
-                                                                    <li><a href="blog.html"
-                                                                            class="text-light-white fw-500">Blog Grid
-                                                                            View</a>
-                                                                    </li>
-                                                                    <li><a href="blog-style-2.html"
-                                                                            class="text-light-white fw-500">Blog Grid
-                                                                            View 2</a>
-                                                                    </li>
-                                                                    <li><a href="blog-details.html"
-                                                                            class="text-light-white fw-500">Blog
-                                                                            Details</a>
-                                                                    </li>
-                                                                    <li><a href="ex-deals.html"
-                                                                            class="text-light-white fw-500">Ex Deals</a>
-                                                                    </li>
-                                                                    <li><a href="about.html"
-                                                                            class="text-light-white fw-500">About Us</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-sm-6">
-                                                            <div class="menu-style">
-                                                                <div class="menu-title">
-                                                                    <h6 class="cat-name"><a href="#"
-                                                                            class="text-light-black">Related Pages</a>
-                                                                    </h6>
-                                                                </div>
-                                                                <ul>
-                                                                    <li><a href="restaurant.html"
-                                                                            class="text-light-white fw-500">Restaurant</a>
-                                                                    <li><a href="restaurant-style-1.html"
-                                                                            class="text-light-white fw-500">Restaurant
-                                                                            1</a>
-                                                                    </li>
-                                                                    <li><a href="restaurant-style-2.html"
-                                                                            class="text-light-white fw-500">Restaurant
-                                                                            2</a>
-                                                                    </li>
-                                                                    <li><a href="add-restaurant.html"
-                                                                            class="text-light-white fw-500">Add
-                                                                            Restaurant</a>
-                                                                    </li>
-                                                                    <li><a href="list-view.html"
-                                                                            class="text-light-white fw-500">List
-                                                                            View</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3 col-sm-6">
-                                                            <div class="menu-style">
-                                                                <div class="menu-title">
-                                                                    <h6 class="cat-name"><a href="#"
-                                                                            class="text-light-black">Additional
-                                                                            Pages</a></h6>
-                                                                </div>
-                                                                <ul>
-                                                                    <li><a href="login.html"
-                                                                            class="text-light-white fw-500">Login</a>
-                                                                    </li>
-                                                                    <li><a href="register.html"
-                                                                            class="text-light-white fw-500">Sign-up</a>
-                                                                    </li>
-                                                                    <li><a href="checkout.html"
-                                                                            class="text-light-white fw-500">Checkout</a>
-                                                                    </li>
-                                                                    <li><a href="order-details.html"
-                                                                            class="text-light-white fw-500">Order
-                                                                            Details</a>
-                                                                    </li>
-                                                                    <li><a href="geo-locator.html"
-                                                                            class="text-light-white fw-500">Geo
-                                                                            Locator</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="order-details.html">
+                                                            <div class="icon"><i class="flaticon-takeaway"></i>
+                                                            </div> <span class="details">Upcoming Orders</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="icon"><i class="flaticon-breadbox"></i>
+                                                            </div> <span class="details">Saved</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="icon"><i class="flaticon-gift"></i>
+                                                            </div> <span class="details">Gift cards</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="icon"><i class="flaticon-refer"></i>
+                                                            </div> <span class="details">Refer a friend</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="icon"><i class="flaticon-diamond"></i>
+                                                            </div> <span class="details">Perks</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="icon"><i class="flaticon-user"></i>
+                                                            </div> <span class="details">Account</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="icon"><i
+                                                                    class="flaticon-board-games-with-roles"></i>
+                                                            </div> <span class="details">Help</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="user-footer"> <span class="text-light-black">Not
+                                                        Jhon?</span> <a href="#">Sign Out</a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- mobile search -->
-                            <div class="mobile-search">
-                                <a href="#" data-toggle="modal" data-target="#search-box"> <i class="fas fa-search"></i>
-                                </a>
-                            </div>
-                            <!-- mobile search -->
-                            <!-- user account -->
-                            <div class="user-details p-relative">
-                                <a href="#" class="text-light-white fw-500">
-                                    <img src="assets/img/user-1.png" class="rounded-circle" alt="userimg"> <span>Hi,
-                                        Kate</span>
-                                </a>
-                                <div class="user-dropdown">
-                                    <ul>
-                                        <li>
-                                            <a href="order-details.html">
-                                                <div class="icon"><i class="flaticon-rewind"></i>
-                                                </div> <span class="details">Past Orders</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="order-details.html">
-                                                <div class="icon"><i class="flaticon-takeaway"></i>
-                                                </div> <span class="details">Upcoming Orders</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="flaticon-breadbox"></i>
-                                                </div> <span class="details">Saved</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="flaticon-gift"></i>
-                                                </div> <span class="details">Gift cards</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="flaticon-refer"></i>
-                                                </div> <span class="details">Refer a friend</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="flaticon-diamond"></i>
-                                                </div> <span class="details">Perks</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="flaticon-user"></i>
-                                                </div> <span class="details">Account</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon"><i class="flaticon-board-games-with-roles"></i>
-                                                </div> <span class="details">Help</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="user-footer"> <span class="text-light-black">Not Jhon?</span> <a
-                                            href="#">Sign Out</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- mobile search -->
-                            <!-- user notification -->
-                            <div class="cart-btn notification-btn">
-                                <a href="#" class="text-light-green fw-700"> <i class="fas fa-bell"></i>
-                                    <span class="user-alert-notification"></span>
-                                </a>
-                                <div class="notification-dropdown">
-                                    <div class="product-detail">
-                                        <a href="#">
-                                            <div class="img-box">
-                                                <img src="assets/img/shop-1.png" class="rounded" alt="image">
-                                            </div>
-                                            <div class="product-about">
-                                                <p class="text-light-black">Lil Johnny’s</p>
-                                                <p class="text-light-white">Spicy Maxican Grill</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="rating-box">
-                                        <p class="text-light-black">How was your last order ?.</p> <span
-                                            class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <cite class="text-light-white">Ordered 2 days ago</cite>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- user notification -->
-                            <!-- user cart -->
-                            <div class="cart-btn cart-dropdown">
-                                <a href="#" class="text-light-green fw-700"> <i class="fas fa-shopping-bag"></i>
-                                    <span class="user-alert-cart">3</span>
-                                </a>
-                                <div class="cart-detail-box">
-                                    <div class="card">
-                                        <div class="card-header padding-15">Your Order</div>
-                                        <div class="card-body no-padding">
-                                            <div class="cat-product-box">
-                                                <div class="cat-product">
-                                                    <div class="cat-name">
-                                                        <a href="#">
-                                                            <p class="text-light-green"><span
-                                                                    class="text-dark-white">1</span> Chilli Chicken</p>
-                                                            <span class="text-light-white">small, chilli chicken</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="delete-btn">
-                                                        <a href="#" class="text-dark-white"> <i
-                                                                class="far fa-trash-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="price"> <a href="#" class="text-dark-white fw-500">
-                                                            $2.25
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cat-product-box">
-                                                <div class="cat-product">
-                                                    <div class="cat-name">
-                                                        <a href="#">
-                                                            <p class="text-light-green"><span
-                                                                    class="text-dark-white">1</span> loaded cheese</p>
-                                                            <span class="text-light-white">small, chilli chicken</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="delete-btn">
-                                                        <a href="#" class="text-dark-white"> <i
-                                                                class="far fa-trash-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="price"> <a href="#" class="text-dark-white fw-500">
-                                                            $2.25
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cat-product-box">
-                                                <div class="cat-product">
-                                                    <div class="cat-name">
-                                                        <a href="#">
-                                                            <p class="text-light-green"><span
-                                                                    class="text-dark-white">1</span> Tortia Chicken</p>
-                                                            <span class="text-light-white">small, chilli chicken</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="delete-btn">
-                                                        <a href="#" class="text-dark-white"> <i
-                                                                class="far fa-trash-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="price"> <a href="#" class="text-dark-white fw-500">
-                                                            $2.25
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-total">
-                                                <div class="total-price border-0"> <span
-                                                        class="text-dark-white fw-700">Items subtotal:</span>
-                                                    <span class="text-dark-white fw-700">$9.99</span>
-                                                </div>
-                                                <div class="empty-bag padding-15"> <a href="#">Empty bag</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer padding-15"> <a href="checkout.html"
-                                                class="btn-first green-btn text-custom-white full-width fw-500">Proceed
-                                                to Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- user cart -->
+                                        <!-- mobile search -->
+                                        <!-- user notification -->
+
+                                        <!-- user notification -->
+                                        <!-- user cart -->
+
+                                        <!-- user cart -->
                         </div>
                     </div>
                     <div class="col-sm-12 mobile-search">
@@ -437,33 +185,28 @@
     <!-- footer -->
     <div class="footer-top section-padding bg-black">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 col-sm-4 col-6 mb-sm-20">
+            <div class="row" style="align-items: center; justify-content: space-evenly">
+                <div class="col-md-2 col-sm-4 col-8 mb-sm-20">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-credit-card-1"></i></span>
                         <span class="text-custom-white">100% Payment<br>Secured</span>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-6 mb-sm-20">
+                <div class="col-md-2 col-sm-4 col-8 mb-sm-20">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-wallet-1"></i></span>
                         <span class="text-custom-white">Support lots<br> of Payments</span>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-6 mb-sm-20">
+                <div class="col-md-2 col-sm-4 col-8 mb-sm-20">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-help"></i></span>
                         <span class="text-custom-white">24 hours / 7 days<br>Support</span>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-6">
-                    <div class="icon-box"> <span class="text-light-green"><i class="flaticon-truck"></i></span>
-                        <span class="text-custom-white">Free Delivery<br>with $50</span>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-6">
+                <div class="col-md-2 col-sm-4 col-8">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-guarantee"></i></span>
                         <span class="text-custom-white">Best Price<br>Guaranteed</span>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-6">
+                <div class="col-md-2 col-sm-4 col-8">
                     <div class="icon-box"> <span class="text-light-green"><i
                                 class="flaticon-app-file-symbol"></i></span>
                         <span class="text-custom-white">Mobile Apps<br>Ready</span>
@@ -571,21 +314,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-links">
-                        <h6 class="text-custom-white">Download Apps</h6>
-                        <div class="appimg">
-                            <a href="#">
-                                <img src="assets/img/playstore.jpg" class="img-fluid" alt="app logo">
-                            </a>
-                        </div>
-                        <div class="appimg">
-                            <a href="#">
-                                <img src="assets/img/appstore.jpg" class="img-fluid" alt="app logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-xl col-lg-4 col-md-4 col-sm-6">
                     <div class="footer-contact">
                         <h6 class="text-custom-white">Newsletter</h6>
@@ -638,8 +367,7 @@
 
                 </div>
                 <div class="col-lg-4">
-                    <div class="copyright-text"> <span class="text-light-white"><a href="templateshub.net">Templates
-                                Hub</a> </span>
+                    <div class="copyright-text"> <span class="text-light-white"><a href="#">Ultimate-chords</a> </span>
                     </div>
                 </div>
             </div>
