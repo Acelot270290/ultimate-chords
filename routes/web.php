@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('homepage');
 
+
+Route::get('/artist', 'ArtistController@index')->name('artist');
+

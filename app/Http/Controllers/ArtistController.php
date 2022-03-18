@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Artist;
+use App\Model\Artists;
+use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ArtistController extends Controller
 {
@@ -14,7 +16,19 @@ class ArtistController extends Controller
      */
     public function index()
     {
-        //
+        
+       $artistas = Artists::select('id_artist', 'artist_name')
+       //->limit(10)
+       ->get();
+
+        foreach($artistas as $artista){
+            Artists::where('id_artist', $artista->id_artist)->update([$artista->artist_slug, Str::slug($artista->artist_name)]);
+        }
+        
+        print_r($artistas);
+      /*  $post->title  = $request->title;
+        $post->slug = \Str::slug($request->title);
+        $post->save();*/
     }
 
     /**
@@ -44,7 +58,7 @@ class ArtistController extends Controller
      * @param  \App\Artista  $artista
      * @return \Illuminate\Http\Response
      */
-    public function show(Artista $artista)
+    public function show(Artists $artista)
     {
         //
     }
@@ -55,7 +69,7 @@ class ArtistController extends Controller
      * @param  \App\Artista  $artista
      * @return \Illuminate\Http\Response
      */
-    public function edit(Artista $artista)
+    public function edit(Artists $artista)
     {
         //
     }
@@ -67,7 +81,7 @@ class ArtistController extends Controller
      * @param  \App\Artista  $artista
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Artista $artista)
+    public function update(Request $request, Artists $artista)
     {
         //
     }
@@ -78,7 +92,7 @@ class ArtistController extends Controller
      * @param  \App\Artista  $artista
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Artista $artista)
+    public function destroy(Artists $artista)
     {
         //
     }

@@ -55,6 +55,8 @@ class CreateSongsTable extends Migration
             $table->boolean('tabs')->default(0);
             $table->boolean('bass')->default(0);
             $table->boolean('drums')->default(0);
+
+            $table->string('slug_song', 250);
             
             $table->timestamps();
         });

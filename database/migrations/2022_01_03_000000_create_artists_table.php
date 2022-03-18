@@ -32,6 +32,8 @@ class CreateArtistsTable extends Migration
                 ->references('id_style')
                 ->on('styles');
 
+            $table->string('slug_artist', 250);
+
             $table->timestamps();
         });
     }
