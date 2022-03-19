@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Model\Artists;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class ArtistController extends Controller
@@ -17,18 +18,15 @@ class ArtistController extends Controller
     public function index()
     {
         
-       $artistas = Artists::select('id_artist', 'artist_name')
-       //->limit(10)
-       ->get();
-
+       $artistas = Artists::select('id_artist', 'artist_name')->get();
+        
         foreach($artistas as $artista){
-            Artists::where('id_artist', $artista->id_artist)->update([$artista->artist_slug, Str::slug($artista->artist_name)]);
+            if($artista->artist_slug == ""){
+                Artists::where('id_artist', $artista->id_artist)->update(['artist_slug' => Str::slug($artista->artist_name)]);
+            }
         }
         
         print_r($artistas);
-      /*  $post->title  = $request->title;
-        $post->slug = \Str::slug($request->title);
-        $post->save();*/
     }
 
     /**

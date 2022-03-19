@@ -17,4 +17,5 @@ Route::get('/', 'HomeController@index')->name('homepage');
 
 
 Route::get('/artist', 'ArtistController@index')->name('artist');
+Route::get('/song', 'SongController@index')->name('song');
 
