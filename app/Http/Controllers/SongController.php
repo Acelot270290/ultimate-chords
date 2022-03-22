@@ -17,7 +17,7 @@ class SongController extends Controller
     public function index()
     {
         $chunk = 1000;
-        Songs::select('id_song', 'song_name')->where('song_slug', '!=', '')->orderBy('id_song')->chunk($chunk, function($songs) {
+        Songs::select('id_song', 'song_name')->where('song_slug', '=', '')->orderBy('id_song')->chunk($chunk, function($songs) {
              foreach($songs as $song){
                  if($song->song_slug == ""){
                      Songs::where('id_song', $song->id_song)->update(['song_slug' => Str::slug($song->song_name)]);
