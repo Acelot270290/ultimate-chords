@@ -13,9 +13,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+# Others
 Route::get('/', 'HomeController@index')->name('homepage');
 
-
+# Artists
 Route::get('/artist', 'ArtistController@index')->name('artist');
+Route::get('/artist/{letter}', 'ArtistController@artistLetter')->name('artistLetter');
+Route::get('/artist/{letter}/{artist_slug}', 'ArtistController@artistSongs')->name('artistSongs');
+
+# Songs
 Route::get('/song', 'SongController@index')->name('song');
 
