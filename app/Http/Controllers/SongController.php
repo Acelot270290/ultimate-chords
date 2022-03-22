@@ -16,20 +16,14 @@ class SongController extends Controller
      */
     public function index()
     {
-       $i = 0;
-       $offset = 1000;
-       $lower = (int)($offset * $i + 1);
-       $upper = $lower + $offset;
-       //$songs = Songs::select('id_song', 'song_name')->where('id_song', '>=', $lower)->limit($upper)->get()->toSql();
-       echo Songs::select('id_song', 'song_name')->where('id_song', '>=', $lower)->limit($upper)->toSql();
-        
-        /*foreach($songs as $song){
-            if($song->song_slug == ""){
-                Songs::where('id_song', $song->id_song)->update(['song_slug' => Str::slug($song->song_name)]);
+       $chunk = 1000;
+       Songs::select('id_song', 'song_name')->orderBy('id_song')->chunk($chunk, function($songs) {
+            foreach($songs as $song){
+                if($song->song_slug == ""){
+                    Songs::where('id_song', $song->id_song)->update(['song_slug' => Str::slug($song->song_name)]);
+                }
             }
-        }
-        
-        print_r($songs);*/
+        });
     }
 
     /**
