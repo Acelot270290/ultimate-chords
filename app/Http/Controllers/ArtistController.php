@@ -20,13 +20,14 @@ class ArtistController extends Controller
         
        $artistas = Artists::select('id_artist', 'artist_name')->get();
         
-        foreach($artistas as $artista){
+        /*foreach($artistas as $artista){
             if($artista->artist_slug == ""){
                 Artists::where('id_artist', $artista->id_artist)->update(['artist_slug' => Str::slug($artista->artist_name)]);
             }
         }
         
-        print_r($artistas);
+        print_r($artistas);*/
+
     }
 
     /**
