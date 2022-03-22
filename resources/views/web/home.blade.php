@@ -52,8 +52,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-header-left">
-                    <h3 class="text-light-black header-title title">Top Tabs <span class="fs-14"><a
-                                href="restaurant.html">See all Tabs</a></span></h3>
+                    <h3 class="text-light-black header-title title">Top Artists <span class="fs-14"></h3>
                 </div>
             </div>
             <div class="col-12">
@@ -61,49 +60,42 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="restaurant.html" class="categories">
-                                <div class="icon icon-parent text-custom-white bg-light-green"> <i
-                                        class="fas fa-map-marker-alt"></i>
-                                </div> <span class="text-light-black cat-name">Brooklyn</span>
+                                <div class="icon text-custom-white bg-light-green ">
+                                    <img src={{url('assets/img/top-tabs/adele.jpg')}} class="rounded-circle"
+                                        alt="categories">
+                                </div> <span class="text-light-black cat-name">Adele </span>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="restaurant.html" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
-                                    <img src="assets/img/restaurants/125x125/cuisine-1.jpg" class="rounded-circle"
+                                    <img src={{url('assets/img/top-tabs/justin.jpg')}} class="rounded-circle"
                                         alt="categories">
-                                </div> <span class="text-light-black cat-name">Italian </span>
+                                </div> <span class="text-light-black cat-name">Justin Bieber </span>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="restaurant.html" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
-                                    <img src="assets/img/restaurants/125x125/cuisine-2.jpg" class="rounded-circle"
+                                    <img src={{url('assets/img/top-tabs/ed.jpg')}}  class="rounded-circle"
                                         alt="categories">
-                                </div> <span class="text-light-black cat-name">Thai </span>
+                                </div> <span class="text-light-black cat-name">Ed Sheeran </span>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="restaurant.html" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
-                                    <img src="assets/img/restaurants/125x125/cuisine-3.jpg" class="rounded-circle"
+                                    <img src={{url('assets/img/top-tabs/kane.jpg')}}  class="rounded-circle"
                                         alt="categories">
-                                </div> <span class="text-light-black cat-name">Chinese </span>
+                                </div> <span class="text-light-black cat-name">Kane Brown </span>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="restaurant.html" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
-                                    <img src="assets/img/restaurants/125x125/cuisine-4.jpg" class="rounded-circle"
+                                    <img src="{{url('assets/img/top-tabs/metallica.jpg')}}" class="rounded-circle"
                                         alt="categories">
-                                </div> <span class="text-light-black cat-name">Mexican </span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
-                                <div class="icon text-custom-white bg-light-green ">
-                                    <img src="assets/img/restaurants/125x125/cuisine-5.jpg" class="rounded-circle"
-                                        alt="categories">
-                                </div> <span class="text-light-black cat-name">Indian </span>
+                                </div> <span class="text-light-black cat-name">Metallica </span>
                             </a>
                         </div>
                         <div class="swiper-slide">
@@ -858,7 +850,7 @@
             <div class="col-12">
                 <div class="section-header-left" style="margin-top: 40px">
                     <h3 class="text-light-black header-title title">Top Lessons</h3>
-                </div>   
+                </div>
             </div>
         </div>
         <!-- advertisement banner-->
