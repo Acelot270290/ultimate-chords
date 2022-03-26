@@ -18,23 +18,24 @@
     <link rel="apple-touch-icon-precomposed" href="#">
     <link rel="shortcut icon" href="#">
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href={{ url('assets/css/bootstrap.min.css') }} rel="stylesheet">
     <!-- Fontawesome -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href={{ url('assets/css/font-awesome.css') }} rel="stylesheet">
     <!-- Flaticons -->
-    <link href="assets/css/font/flaticon.css" rel="stylesheet">
+    <link href={{ url('assets/css/font/flaticon.css') }} rel="stylesheet">
     <!-- Swiper Slider -->
-    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href={{ url('assets/css/swiper.min.css') }} rel="stylesheet">
     <!-- Range Slider -->
-    <link href="assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href={{ url('assets/css/ion.rangeSlider.min.css') }} rel="stylesheet">
     <!-- magnific popup -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href={{ url('assets/css/nice-select.css') }} rel="stylesheet">
     <!-- Nice Select -->
-    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <link href={{ url('assets/css/swiper.min.css') }} rel="stylesheet">
     <!-- Custom Stylesheet -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href={{ url('assets/css/style.css') }} rel="stylesheet">
     <!-- Custom Responsive -->
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href={{ url('assets/css/responsive.css') }} rel="stylesheet">
+    <link href={{ url('assets/css/artist.css') }} rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet">
     <!-- place -->
