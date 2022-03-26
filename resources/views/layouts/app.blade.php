@@ -51,7 +51,7 @@
                         <!-- logo -->
                         <div class="logo mainNavCol">
                             <a href="index-2.html">
-                                <img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+                                <img src={{ url("assets/img/logo.png") }} class="img-fluid" alt="Logo">
                             </a>
                         </div>
                         <!-- logo -->
@@ -84,7 +84,7 @@
                                         <!-- user account -->
                                         <div class="user-details p-relative">
                                             <a href="#" class="text-light-white fw-500">
-                                                <img src="assets/img/user-1.png" class="rounded-circle" alt="userimg">
+                                                <img src={{ url("assets/img/user-1.png") }} class="rounded-circle" alt="userimg">
                                                 <span>Hi,
                                                     Kate</span>
                                             </a>
@@ -220,28 +220,28 @@
         <div class="u-line instagram-slider swiper-container">
             <ul class="hm-list hm-instagram swiper-wrapper">
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-3.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-3.jpg") }} alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-1.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-1.jpg") }} alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-2.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-2.jpg") }} alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-4.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-4.jpg") }} alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-5.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-5.jpg") }} alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-6.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-6.jpg") }} alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-7.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-7.jpg") }} alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="assets/img/restaurants/250x200/insta-8.jpg" alt="instagram"></a>
+                    <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-8.jpg") }} alt="instagram"></a>
                 </li>
             </ul>
         </div>
@@ -355,14 +355,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="payment-logo mb-md-20"> <span class="text-light-white fs-14 mr-3">We are accept</span>
-                        <div class="payemt-icon">
-                            <img src="assets/img/card-front.jpg" alt="#">
-                            <img src="assets/img/visa.jpg" alt="#">
-                            <img src="assets/img/amex-card-front.png" alt="#">
-                            <img src="assets/img/mastercard.png" alt="#">
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="col-lg-4 text-center medewithlove align-self-center">
 
@@ -406,25 +399,25 @@
     </div>
     <!-- Place all Scripts Here -->
     <!-- jQuery -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script src={{ url("assets/js/jquery.min.js") }}></script>
     <!-- Popper -->
-    <script src="assets/js/popper.min.js"></script>
+    <script src={{ url("assets/js/popper.min.js") }}></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src={{ url("assets/js/bootstrap.min.js") }}></script>
     <!-- Range Slider -->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src={{ url("assets/js/ion.rangeSlider.min.js") }}></script>
     <!-- Swiper Slider -->
-    <script src="assets/js/swiper.min.js"></script>
+    <script src={{ url("assets/js/swiper.min.js") }}></script>
     <!-- Nice Select -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src={{ url("assets/js/jquery.nice-select.min.js") }}></script>
     <!-- magnific popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src={{ url("assets/js/jquery.magnific-popup.min.js") }}></script>
     <!-- Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnd9JwZvXty-1gHZihMoFhJtCXmHfeRQg"></script>
     <!-- sticky sidebar -->
-    <script src="assets/js/sticksy.js"></script>
+    <script src={{ url("assets/js/sticksy.js") }}></script>
     <!-- Munch Box Js -->
-    <script src="assets/js/munchbox.js"></script>
+    <script src={{ url("assets/js/munchbox.js") }}></script>
     <!-- /Place all Scripts Here -->
 </body>
 
