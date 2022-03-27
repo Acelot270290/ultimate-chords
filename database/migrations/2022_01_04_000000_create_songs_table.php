@@ -57,6 +57,8 @@ class CreateSongsTable extends Migration
             $table->boolean('drums')->default(0);
 
             $table->string('slug_song', 250);
+
+            $table->unsignedBigInteger('song_views', false)->default(0);
             
             $table->timestamps();
         });

@@ -34,6 +34,8 @@ class CreateArtistsTable extends Migration
 
             $table->string('slug_artist', 250);
 
+            $table->unsignedBigInteger('artist_views', false)->default(0);
+
             $table->timestamps();
         });
     }

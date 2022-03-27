@@ -91,4 +91,25 @@ class SongController extends Controller
     {
         //
     }
+
+    /**
+     * This function only redirects to type and set the type as the default: 'chords'
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showSong($letter, $artistSlug, $songSlug)
+    {
+        showSongWithType($letter, $artistSlug, $songSlug, 'chords');
+    }
+
+    /**
+     * Display artists with the selected letter and shows its type
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showSongWithType($letter, $artistSlug, $songSlug, $dataType)
+    {
+        // Select data and display the song info
+        return;
+    }
 }

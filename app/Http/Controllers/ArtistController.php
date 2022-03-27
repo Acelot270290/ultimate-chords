@@ -119,11 +119,39 @@ class ArtistController extends Controller
      */
     public function artistSongs($letter, $artist_slug)
     {
-        // seleciona o artista usando a slug (que é única)
-        $artist = Artists::select('id_artist', 'artist_name', 'artist_image', 'artist_start_year', 'artist_id_country', 'artist_id_style', 'artist_slug')->where('artist_slug', '=', $artist_slug)->first();
-        // seleciona as músicas do artista (com o id que descobriu na query passada)
-        $songs = Songs::select('id_song', 'song_id_artist', 'song_user_insertion_id', 'song_name', 'song_year', 'song_author', 'song_id_style', 'song_id_tone', 'song_id_videoclass', 'chord', 'keyboard', 'tabs', 'bass', 'drums', 'song_slug')->where('song_id_artist', '=', $artist->id_artist)->get();
+        // Seleciona o artista usando a slug (que é única)
+        $artist = Artists::select('id_artist', 'artist_name', 'artist_image', 'artist_start_year', 'artist_id_country', 'artist_id_style', 'artist_slug', 'artist_views')
+            ->where('artist_slug', '=', $artist_slug)
+            ->first();
 
+        ########################################################################################################
+        # atualizar o artist_views aqui incrementando, mas fazer uma checagem para evitar que haja abuso de ip #
+        ########################################################################################################
+
+        // Definição das buscas a serem realizadas
+        $searchLetters = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+        // Declaração de dicionário de músicas separadas pela primeira letra
+        $songs = [];
+
+        // Seleciona as músicas do artista para cada letra (com o id que descobriu na query passada)
+        foreach($searchLetters as $searchLetter){
+            // Se for numérico usa o regex
+            if($searchLetter == '0-9'){
+                $songs[$searchLetter] = Songs::select('id_song', 'song_id_artist', 'song_user_insertion_id', 'song_name', 'song_year', 'song_author', 'song_id_style', 'song_id_tone', 'song_id_videoclass', 'chord', 'keyboard', 'tabs', 'bass', 'drums', 'song_slug')
+                    ->where('song_id_artist', '=', $artist->id_artist)
+                    ->where('song_name', 'REGEXP', '^[0-9]')
+                    ->orderby('song_name')
+                    ->get();
+            }else{
+                $songs[$searchLetter] = Songs::select('id_song', 'song_id_artist', 'song_user_insertion_id', 'song_name', 'song_year', 'song_author', 'song_id_style', 'song_id_tone', 'song_id_videoclass', 'chord', 'keyboard', 'tabs', 'bass', 'drums', 'song_slug')
+                    ->where('song_id_artist', '=', $artist->id_artist)
+                    ->where('song_name', 'like', $searchLetter . '%')
+                    ->orderby('song_name')
+                    ->get();
+            }
+        }
+        
         return view("web.artistSongs",[
             'letter' => $letter,
             'artist' => $artist,
