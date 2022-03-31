@@ -184,6 +184,7 @@
     @yield('content')
 
     <!-- footer -->
+    @include('layouts.artistLetterBar')
     <div class="footer-top section-padding bg-black">
         <div class="container-fluid">
             <div class="row" style="align-items: center; justify-content: space-evenly">
