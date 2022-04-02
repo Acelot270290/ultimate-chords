@@ -163,25 +163,25 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="ex-collection-box mb-xl-20">
-                    <img src="assets/img/restaurants/540x300/collection-1.jpg" class="img-fluid full-width" alt="image">
+                    <img src="{{url('assets/img/top-music/adele.jpg')}}" class="img-fluid full-width" alt="image">
                     <div class="category-type overlay padding-15"> <a href="restaurant.html" class="category-btn">Adele - Easy On Me</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="ex-collection-box mb-xl-20">
-                    <img src="assets/img/restaurants/540x300/collection-2.jpg" class="img-fluid full-width" alt="image">
-                    <div class="category-type overlay padding-15"> <a href="restaurant.html" class="category-btn">The Kid LAROI, Justin Bieber - STAY</a>
+                    <img src="{{url('assets/img/top-music/the-kid-laroi.jpg')}}" class="img-fluid full-width" alt="image">
+                    <div class="category-type overlay padding-15"> <a href="{{ route('artistSongs', ['letter' => 'A', 'artist_slug' => 'adele']) }}" class="category-btn">The Kid LAROI, Justin Bieber - STAY</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <!--<div class="row">
             <div class="col-lg-3 col-md-4">
                 <div class="large-product-box mb-xl-20 p-relative">
                     <img src="assets/img/restaurants/255x587/Banner-12.jpg" class="img-fluid full-width" alt="image">
                     <div class="category-type overlay padding-15">
-                        <button class="category-btn">Glass Animals - Heat Waves</button> 
+                        <button class="category-btn">Glass Animals - Heat Waves</button>
                     </div>
                 </div>
             </div>
@@ -511,7 +511,7 @@
                     </div>
                 </div>
             </div>
-        </div>
- 
+        </div>-->
+
 </section>
 @endsection

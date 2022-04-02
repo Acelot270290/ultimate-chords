@@ -5,6 +5,8 @@
 <!-- munchbox/  05 Dec 2019 10:05:53 GMT -->
 
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3546768855493813"
+     crossorigin="anonymous"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -73,7 +75,7 @@
                             <a href="#"> <span>Chords &nbsp;&nbsp;</span>
                                 <a href="#"> <span>Tabs&nbsp;&nbsp; </span>
                                     <a href="#"> <span>Lessons </span>
-                                      
+
                                         <!-- mobile search -->
                                         <div class="mobile-search">
                                             <a href="#" data-toggle="modal" data-target="#search-box"> <i
@@ -218,7 +220,7 @@
         </div>
     </div>
     <footer class="section-padding bg-light-theme pt-0 u-line bg-black">
-        <div class="u-line instagram-slider swiper-container">
+       <!-- <div class="u-line instagram-slider swiper-container">
             <ul class="hm-list hm-instagram swiper-wrapper">
                 <li class="swiper-slide">
                     <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-3.jpg") }} alt="instagram"></a>
@@ -245,7 +247,7 @@
                     <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-8.jpg") }} alt="instagram"></a>
                 </li>
             </ul>
-        </div>
+        </div>-->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl col-lg-4 col-md-4 col-sm-6">
@@ -356,7 +358,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
-                    
+
                 </div>
                 <div class="col-lg-4 text-center medewithlove align-self-center">
 
