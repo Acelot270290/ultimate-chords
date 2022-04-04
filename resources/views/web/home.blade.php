@@ -87,6 +87,7 @@
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src={{url('assets/img/top-tabs/kane.jpg')}}  class="rounded-circle"
                                         alt="categories">
+                                        
                                 </div> <span class="text-light-black cat-name">Kane Brown </span>
                             </a>
                         </div>
