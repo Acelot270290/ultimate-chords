@@ -5,8 +5,23 @@
 <!-- munchbox/  05 Dec 2019 10:05:53 GMT -->
 
 <head>
+
+    <!-- Google Adsense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3546768855493813"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H19E108GJH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H19E108GJH');
+    </script>
+
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -86,7 +101,8 @@
                                         <!-- user account -->
                                         <div class="user-details p-relative">
                                             <a href="#" class="text-light-white fw-500">
-                                                <img src={{ url("assets/img/user-1.png") }} class="rounded-circle" alt="userimg">
+                                                <img src={{ url("assets/img/user-1.png") }} class="rounded-circle"
+                                                    alt="userimg">
                                                 <span>Hi,
                                                     Kate</span>
                                             </a>
@@ -220,7 +236,7 @@
         </div>
     </div>
     <footer class="section-padding bg-light-theme pt-0 u-line bg-black">
-       <!-- <div class="u-line instagram-slider swiper-container">
+        <!-- <div class="u-line instagram-slider swiper-container">
             <ul class="hm-list hm-instagram swiper-wrapper">
                 <li class="swiper-slide">
                     <a href="#"><img src={{ url("assets/img/restaurants/250x200/insta-3.jpg") }} alt="instagram"></a>
