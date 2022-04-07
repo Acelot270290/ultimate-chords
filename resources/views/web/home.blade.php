@@ -11,9 +11,9 @@
                     <div class="row justify-content-start">
                         <div class="col-lg-7 align-self-center">
                             <div class="right-side-content">
-                                <h1 class="text-custom-white fw-600">Increase takeout sales by 50%</h1>
-                                <h3 class="text-custom-white fw-400">with the largest delivery platform in the U.S. and
-                                    Canada</h3>
+                                <h1 class="text-custom-white fw-600">Ultimate Chords</h1>
+                               <!-- <h3 class="text-custom-white fw-400">with the largest delivery platform in the U.S. and
+                                    Canada</h3>-->
                                 <a href="restaurant.html" class="btn-second btn-submit">Learn More.</a>
                             </div>
                         </div>
@@ -29,9 +29,9 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8 align-self-center">
                             <div class="right-side-content text-center">
-                                <h1 class="text-custom-white fw-600">Increase takeout sales by 50%</h1>
-                                <h3 class="text-custom-white fw-400">with the largest delivery platform in the U.S. and
-                                    Canada</h3>
+                                <h1 class="text-custom-white fw-600">Guitar Lessons</h1>
+                               <!-- <h3 class="text-custom-white fw-400">with the largest delivery platform in the U.S. and
+                                    Canada</h3>-->
                                 <a href="restaurant.html" class="btn-second btn-submit">Learn More.</a>
                             </div>
                         </div>
