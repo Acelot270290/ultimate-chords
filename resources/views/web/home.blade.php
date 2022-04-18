@@ -59,7 +59,7 @@
                 <div class="category-slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src={{url('assets/img/top-tabs/adele.jpg')}} class="rounded-circle"
                                         alt="categories">
@@ -67,7 +67,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src={{url('assets/img/top-tabs/justin.jpg')}} class="rounded-circle"
                                         alt="categories">
@@ -75,7 +75,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src={{url('assets/img/top-tabs/ed.jpg')}}  class="rounded-circle"
                                         alt="categories">
@@ -83,7 +83,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src={{url('assets/img/top-tabs/kane.jpg')}}  class="rounded-circle"
                                         alt="categories">
@@ -92,7 +92,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src="{{url('assets/img/top-tabs/metallica.jpg')}}" class="rounded-circle"
                                         alt="categories">
@@ -100,7 +100,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src="{{url('assets/img/top-tabs/glass-animals.jpg')}}" class="rounded-circle"
                                         alt="categories">
@@ -108,7 +108,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src="{{url('assets/img/top-tabs/doja-cats.jpeg')}}" class="rounded-circle"
                                         alt="categories">
@@ -116,7 +116,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src="{{url('assets/img/top-tabs/Chris-Stapleton.jpg')}}" class="rounded-circle"
                                         alt="categories">
@@ -124,7 +124,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src="{{url('assets/img/top-tabs/imagem-dragons.jpg')}}" class="rounded-circle"
                                         alt="categories">
@@ -132,7 +132,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="restaurant.html" class="categories">
+                            <a href="#" class="categories">
                                 <div class="icon text-custom-white bg-light-green ">
                                     <img src="{{url('assets/img/top-tabs/one-republic.jpg')}}" class="rounded-circle"
                                         alt="categories">
