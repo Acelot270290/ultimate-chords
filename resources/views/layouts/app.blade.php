@@ -67,8 +67,8 @@
                     <div class="col-12 mainNavCol">
                         <!-- logo -->
                         <div class="logo mainNavCol">
-                            <a href="index-2.html">
-                                <img src={{ url("assets/img/logo.png") }} class="img-fluid" alt="Logo">
+                            <a href="{{route('homepage')}}">
+                                <p>Ulimate-Chords</p>
                             </a>
                         </div>
                         <!-- logo -->
@@ -98,7 +98,7 @@
                                             </a>
                                         </div>
                                         <!-- mobile search -->
-                                        <!-- user account -->
+                                        <!-- user account 
                                         <div class="user-details p-relative">
                                             <a href="#" class="text-light-white fw-500">
                                                 <img src={{ url("assets/img/user-1.png") }} class="rounded-circle"
@@ -162,7 +162,7 @@
                                                         Jhon?</span> <a href="#">Sign Out</a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>-->
                                         <!-- mobile search -->
                                         <!-- user notification -->
 
@@ -265,7 +265,7 @@
             </ul>
         </div>-->
         <div class="container-fluid">
-            <div class="row">
+           <!-- <div class="row">
                 <div class="col-xl col-lg-4 col-md-4 col-sm-6">
                     <div class="footer-contact">
                         <h6 class="text-custom-white">Need Help</h6>
@@ -368,7 +368,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </footer>
     <div class="copyright bg-black">
         <div class="container-fluid">
