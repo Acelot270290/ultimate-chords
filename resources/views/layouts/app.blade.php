@@ -49,8 +49,8 @@
     <link href={{ url('assets/css/style.css') }} rel="stylesheet">
     <!-- Custom Responsive -->
     <link href={{ url('assets/css/responsive.css') }} rel="stylesheet">
-    <link href={{ public_path() . 'assets/css/artist.css' }} rel="stylesheet">
-    <link href={{ public_path() . 'assets/css/song.css' }} rel="stylesheet">
+    <link href={{ url('assets/css/artist.css') }} rel="stylesheet">
+    <link href={{ url('assets/css/song.css') }} rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet">
     <!-- place -->
