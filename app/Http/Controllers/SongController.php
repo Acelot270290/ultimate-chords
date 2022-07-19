@@ -143,6 +143,10 @@ class SongController extends Controller
             ->leftjoin('videoclasses', 'videoclasses.id_videoclass', '=', 'songs.song_id_videoclass')
             ->first();
 
+        ######################################################################################################
+        # atualizar o song_views aqui incrementando, mas fazer uma checagem para evitar que haja abuso de ip #
+        ######################################################################################################
+
         // Le o arquivo json com os dados da música
         $json = file_get_contents(public_path() . '/assets/db-all/' . $artist['id_artist'] . '/' . $song['id_song'] . '.json');
 
