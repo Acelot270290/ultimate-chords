@@ -144,7 +144,7 @@ class SongController extends Controller
             ->first();
 
         // Le o arquivo json com os dados da música
-        $json = file_get_contents(public_path() . '/data/' . $artist['id_artist'] . '/' . $song['id_song'] . '.json');
+        $json = file_get_contents(public_path() . '/assets/db-all/' . $artist['id_artist'] . '/' . $song['id_song'] . '.json');
 
         // Muda o arquivo json para um array
         $json = json_decode($json, true);
