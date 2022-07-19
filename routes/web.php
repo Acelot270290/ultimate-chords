@@ -25,4 +25,4 @@ Route::get('/artist/{letter}/{artist_slug}', 'ArtistController@artistSongs')->na
 //Route::get('/song', 'SongController@index')->name('song');
 //Route::get('/song/{artist_slug}', 'SongController@index')->name('song');
 Route::get('/artist/{letter}/{artist_slug}/{song_slug}', 'SongController@showSong')->name('song');
-Route::get('/artist/{letter}/{artist_slug}/{song_slug}/{data_type}', 'SongController@artistSongs')->name('songWtihType');
+Route::get('/artist/{letter}/{artist_slug}/{song_slug}/{data_type}', 'SongController@showSongWithType')->name('songWtihType');
