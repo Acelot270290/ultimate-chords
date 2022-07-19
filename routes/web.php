@@ -22,7 +22,7 @@ Route::get('/artist/{letter}', 'ArtistController@artistLetter')->name('artistLet
 Route::get('/artist/{letter}/{artist_slug}', 'ArtistController@artistSongs')->name('artistSongs');
 
 # Songs
-//Route::get('/songs', 'SongController@index')->name('song');
+Route::get('/songs', 'SongController@index')->name('song');
 //Route::get('/song/{artist_slug}', 'SongController@index')->name('song');
-Route::get('/artist/{letter}/{artist_slug}/{song_slug}', 'SongController@showSong')->name('song');
+//Route::get('/artist/{letter}/{artist_slug}/{song_slug}', 'SongController@showSong')->name('song');
 Route::get('/artist/{letter}/{artist_slug}/{song_slug}/{data_type}', 'SongController@artistSongs')->name('songWtihType');
