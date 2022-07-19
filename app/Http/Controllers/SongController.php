@@ -94,7 +94,7 @@ class SongController extends Controller
     }
 
     /**
-     * This function only redirects to type and set the type as the default: chords -> tabs -> bass -> keyboard -> drums
+     * This function only redirects to type and set the type as the default: chords -> tabature -> bass -> keyboard -> drums
      *
      * @return \Illuminate\Http\Response
      */
@@ -106,10 +106,10 @@ class SongController extends Controller
             ->first();
         
         // Define qual é o tipo de cifra que vai ser utilizada.
-        // O padrão é chords -> tabs -> bass -> keyboard -> drums
+        // O padrão é chords -> tabature -> bass -> keyboard -> drums
         if($song['chord']){
-        }elseif($song['tabs']){
-            $dataType = 'tabs';
+        }elseif($song['tabature']){
+            $dataType = 'tabature';
         }elseif($song['bass']){
             $dataType = 'bass';
         }elseif($song['keyboard']){
