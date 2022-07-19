@@ -78,9 +78,9 @@
                             @endif
                             <span>
                                 @if($song->chord == 1)
-                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'chords']) }}"  data-title="{{ $song->song_name }} chords"><img width="19px" src="{{url('assets/img/icons/acoustic-guitar.png')}}"></a>
+                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'chord']) }}"  data-title="{{ $song->song_name }} chords"><img width="19px" src="{{url('assets/img/icons/acoustic-guitar.png')}}"></a>
                                 @else
-                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'chords']) }}" class="tooltip " data-title="{{ $song->song_name }} chords"><i class="fa-solid fa-guitar"></i>
+                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'chord']) }}" class="tooltip " data-title="{{ $song->song_name }} chords"><i class="fa-solid fa-guitar"></i>
                                 @endif
                                 @if($song->keyboard == 1)
                                     <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'keyboard']) }}"  data-title="{{ $song->song_name }} keyboard"><img width="19px" src="{{url('assets/img/icons/keyboard.png')}}"></a>
@@ -88,9 +88,9 @@
                                     <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'keyboard']) }}" class="tooltip off" data-title="{{ $song->song_name }} keyboard"><i class="ico ico_violao">Keyboard</i></a>
                                 @endif
                                 @if($song->tabs == 1)
-                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'tabs']) }}" data-title="{{ $song->song_name }} tabature"><img width="19px" src="{{url('assets/img/icons/guitar.png')}}"></a>
+                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'tabature']) }}" data-title="{{ $song->song_name }} tabature"><img width="19px" src="{{url('assets/img/icons/guitar.png')}}"></a>
                                 @else
-                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'tabs']) }}" class="tooltip off" data-title="{{ $song->song_name }} tabature"><i class="ico ico_violao">Tabature</i></a>
+                                    <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'tabature']) }}" class="tooltip off" data-title="{{ $song->song_name }} tabature"><i class="ico ico_violao">Tabature</i></a>
                                 @endif
                                 @if($song->bass == 1)
                                     <a href="{{ route('songWtihType', ['letter' => $key, 'artist_slug' => $artist->artist_slug, 'song_slug' => $song->song_slug, 'data_type' => 'bass']) }}"  data-title="{{ $song->song_name }} bass"><img width="19px" src="{{url('assets/img/icons/bass.png')}}"></a>
