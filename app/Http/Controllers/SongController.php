@@ -109,6 +109,7 @@ class SongController extends Controller
         // Define qual é o tipo de cifra que vai ser utilizada.
         // O padrão é chords -> tabature -> bass -> keyboard -> drums
         if($song['chord']){
+            $dataType = 'chord';
         }elseif($song['tabature']){
             $dataType = 'tabature';
         }elseif($song['bass']){
