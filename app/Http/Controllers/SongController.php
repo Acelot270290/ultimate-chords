@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Song;
 use App\Model\Songs;
+use App\Model\Artists;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
@@ -93,13 +94,33 @@ class SongController extends Controller
     }
 
     /**
-     * This function only redirects to type and set the type as the default: 'chords'
+     * This function only redirects to type and set the type as the default: chords -> tabs -> bass -> keyboard -> drums
      *
      * @return \Illuminate\Http\Response
      */
-    public function showSong($letter, $artistSlug, $songSlug)
+    public function showSong($letter, $artist_slug, $song_slug)
     {
-        showSongWithType($letter, $artistSlug, $songSlug, 'chords');
+        // Seleciona o artista usando a slug (que é única)
+        $song = Songs::select('chord', 'keyboard', 'tabs', 'bass', 'drums')
+            ->where('song_slug', '=', $song_slug)
+            ->first();
+        
+        // Define qual é o tipo de cifra que vai ser utilizada.
+        // O padrão é chords -> tabs -> bass -> keyboard -> drums
+        if($song['chord']){
+        }elseif($song['tabs']){
+            $dataType = 'tabs';
+        }elseif($song['bass']){
+            $dataType = 'bass';
+        }elseif($song['keyboard']){
+            $dataType = 'keyboard';
+        }elseif($song['drums']){
+            $dataType = 'drums';
+        }else{
+            // Retorna erro de página não pode ser mostrada porque não existe dados da música. Na teoria isso nunca deverá aparecer.
+            return view("web.oops", []);
+        }
+        return $this->showSongWithType($letter, $artist_slug, $song_slug, $dataType);
     }
 
     /**
@@ -107,9 +128,36 @@ class SongController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function showSongWithType($letter, $artistSlug, $songSlug, $dataType)
+    public function showSongWithType($letter, $artist_slug, $song_slug, $dataType)
     {
+        // Seleciona o artista usando a slug (que é única)
+        $artist = Artists::select('id_artist', 'artist_name', 'artist_image', 'artist_start_year', 'artist_id_country', 'artist_id_style', 'artist_slug', 'artist_views')
+            ->where('artist_slug', '=', $artist_slug)
+            ->first();
+            
+        // Seleciona a música e seus dados usando a slug (que é única)
+        $song = Songs::select('id_song', 'song_id_artist', 'song_name', 'song_year', 'song_author', 'song_id_style', 'song_id_tone', 'song_id_videoclass', 'chord', 'keyboard', 'tabs', 'tabs', 'song_views')
+            ->where('song_slug', '=', $song_slug)
+            ->leftjoin('styles', 'styles.id_style', '=', 'songs.song_id_style')
+            ->leftjoin('tones', 'tones.id_tone', '=', 'songs.song_id_tone')
+            ->leftjoin('videoclasses', 'videoclasses.id_videoclass', '=', 'songs.song_id_videoclass')
+            ->first();
+
+        // Le o arquivo json com os dados da música
+        $json = file_get_contents(public_path() . '/data/' . $artist['id_artist'] . '/' . $song['id_song'] . '.json');
+
+        // Muda o arquivo json para um array
+        $json = json_decode($json, true);
+
+        // Acessa o array e pega o tipo de cifra que vai ser utilizada
+        $data = $json[$dataType];
+
         // Select data and display the song info
-        return;
+        return view("web.song", [
+            'letter' => $letter,
+            'artist' => $artist,
+            'song' => $song, 
+            'data' => $data,
+        ]);
     }
 }

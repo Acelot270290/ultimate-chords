@@ -46,6 +46,7 @@
     <div class="swiper-button-prev"></div>
 </section>
 <!-- slider -->
+@include('layouts.artistLetterBar')
 <!-- Browse by category -->
 <section class="browse-cat u-line section-padding">
     <div class="container">

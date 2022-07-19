@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <!-- munchbox/  05 Dec 2019 10:05:53 GMT -->
 
 <head>
@@ -20,7 +18,6 @@
 
   gtag('config', 'G-H19E108GJH');
     </script>
-
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,6 +50,7 @@
     <!-- Custom Responsive -->
     <link href={{ url('assets/css/responsive.css') }} rel="stylesheet">
     <link href={{ url('assets/css/artist.css') }} rel="stylesheet">
+    <link href={{ url('assets/css/song.css') }} rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet">
     <!-- place -->
@@ -90,7 +88,6 @@
                             <a href="#"> <span>Chords &nbsp;&nbsp;</span>
                                 <a href="#"> <span>Tabs&nbsp;&nbsp; </span>
                                     <a href="#"> <span>Lessons </span>
-
                                         <!-- mobile search -->
                                         <div class="mobile-search">
                                             <a href="#" data-toggle="modal" data-target="#search-box"> <i

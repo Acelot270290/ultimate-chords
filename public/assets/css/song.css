@@ -1,0 +1,31 @@
+.songBox{
+    width: 60%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.metaBox{
+    width: 40%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoBox{
+    width: 100%;
+    height: 210px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoReplacement{
+    width: 100%;
+    height: 210px;
+    border: 1px solid black;
+}

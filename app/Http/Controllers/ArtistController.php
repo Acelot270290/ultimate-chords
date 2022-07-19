@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\Artists;
 use App\Model\Songs;
+use App\Model\Artists;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -106,7 +106,8 @@ class ArtistController extends Controller
     public function artistLetter($letter)
     {
         $artists = Artists::select('id_artist', 'artist_name', 'artist_image', 'artist_start_year', 'artist_id_country', 'artist_id_style', 'artist_slug')->where('artist_name', 'like', $letter . '%')->get();
-        return view("web.artists",[
+        
+        return view("web.artists", [
             'firstLetter' => $letter,
             'artists' => $artists
         ]);
