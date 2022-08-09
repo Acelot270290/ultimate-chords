@@ -2,17 +2,30 @@
 @section('content')
     <section>
         <div class="container">
-            <div class="bandHeader">
-                <h1 class="artHeader">
-                    <img class="artThumb" src="{{ url('assets/img/unknown_artist.svg') }}" width="54">
-                    <span class="t2">{{ $song->song_name }}</span>
-                </h1>
-                <h2>
-                    <a href="{{ route('artistSongs', ['letter' => $letter, 'artist_slug' => $artist->artist_slug]) }}"><span
-                            class="t2">{{ $artist->artist_name }}</span></a>
-                </h2>
-                <div class="containerExhibitions">
-                    <span class="exib"><b>{{ $song->song_views }}</b> exhibitions.</span>
+            <div class="row">
+                <div class="col-12">
+                    <div class="bandHeader">
+                        <h1 class="artHeader">
+                            <img class="artThumb" src="{{ url('assets/img/unknown_artist.svg') }}" width="54">
+                            <span class="t2">{{ $song->song_name }}</span>
+                        </h1>
+                        <h2>
+                            <a
+                                href="{{ route('artistSongs', ['letter' => $letter, 'artist_slug' => $artist->artist_slug]) }}"><span
+                                    class="t2">{{ $artist->artist_name }}</span></a>
+                        </h2>
+                        <div class="containerExhibitions">
+                            <span class="exib"><b>{{ $song->song_views }}</b> exhibitions.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Tune</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                      </select>
                 </div>
             </div>
             <div class="row">
@@ -38,6 +51,6 @@
                     </div>
                 </div>
                 <div class="row">
-            </div>
+                </div>
     </section>
 @endsection
