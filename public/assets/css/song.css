@@ -1,5 +1,5 @@
 .songBox{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: inline-flex;
     flex-direction: column;
@@ -8,11 +8,9 @@
 }
 
 .metaBox{
-    width: 40%;
-    height: 100%;
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
 }
 
