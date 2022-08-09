@@ -166,7 +166,7 @@
             <div class="col-md-6">
                 <div class="ex-collection-box mb-xl-20">
                     <img src="{{url('assets/img/top-music/adele.jpg')}}" class="img-fluid full-width" alt="image">
-                    <div class="category-type overlay padding-15"> <a href="{{route('/artist/H/adele/hello')}}" class="category-btn">Adele - Helloe</a>
+                    <div class="category-type overlay padding-15"> <a href="{{url('/artist/H/adele/hello')}}" class="category-btn">Adele - Helloe</a>
                     </div>
                 </div>
             </div>
