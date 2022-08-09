@@ -166,14 +166,14 @@
             <div class="col-md-6">
                 <div class="ex-collection-box mb-xl-20">
                     <img src="{{url('assets/img/top-music/adele.jpg')}}" class="img-fluid full-width" alt="image">
-                    <div class="category-type overlay padding-15"> <a href="{{url('/artist/H/adele/hello')}}" class="category-btn">Adele - Helloe</a>
+                    <div class="category-type overlay padding-15"> <a href="{{url('/artist/H/adele/hello')}}" class="category-btn">Adele - Hello</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="ex-collection-box mb-xl-20">
                     <img src="{{url('assets/img/top-music/the-kid-laroi.jpg')}}" class="img-fluid full-width" alt="image">
-                    <div class="category-type overlay padding-15"> <a href="{{ route('artistSongs', ['letter' => 'A', 'artist_slug' => 'adele']) }}" class="category-btn">The Kid LAROI, Justin Bieber - STAY</a>
+                    <div class="category-type overlay padding-15"> <a href="{{url('artist/D/justin-bieber/deja-vu-feat-post-malone')}}" class="category-btn">Justin Bieber - Deja Vu</a>
                     </div>
                 </div>
             </div>
